@@ -50,9 +50,7 @@ canvas {
   <script>
 
   /*
-
  * Settings
-
  */
 
 var settings = {
@@ -75,18 +73,14 @@ var settings = {
 
 
 /*
-
  * RequestAnimationFrame polyfill by Erik Möller
-
  */
 
 (function(){var b=0;var c=["ms","moz","webkit","o"];for(var a=0;a<c.length&&!window.requestAnimationFrame;++a){window.requestAnimationFrame=window[c[a]+"RequestAnimationFrame"];window.cancelAnimationFrame=window[c[a]+"CancelAnimationFrame"]||window[c[a]+"CancelRequestAnimationFrame"]}if(!window.requestAnimationFrame){window.requestAnimationFrame=function(h,e){var d=new Date().getTime();var f=Math.max(0,16-(d-b));var g=window.setTimeout(function(){h(d+f)},f);b=d+f;return g}}if(!window.cancelAnimationFrame){window.cancelAnimationFrame=function(d){clearTimeout(d)}}}());
 
 
 /*
-
  * Point class
-
  */
 
 var Point = (function() {
@@ -139,9 +133,7 @@ var Point = (function() {
 
 
 /*
-
  * Particle class
-
  */
 
 var Particle = (function() {
@@ -212,9 +204,7 @@ var Particle = (function() {
 
 
 /*
-
  * ParticlePool class
-
  */
 
 var ParticlePool = (function() {
@@ -337,9 +327,7 @@ var ParticlePool = (function() {
 
 
 /*
-
  * Putting it all together
-
  */
 
 (function(canvas) {
@@ -515,7 +503,18 @@ var ParticlePool = (function() {
 })(document.getElementById('pinkboard'));
 
   </script>
+<div class="center-text",
 
+  style="background-color:rgb(0, 0, 0);
+        width: 100%;
+        color: #ea80b0;
+        height:100%;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        text-align: center;">Vân Anh</div>
  </BODY>
 
 </HTML>
